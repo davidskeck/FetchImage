@@ -136,5 +136,5 @@ struct ImageView_Previews: PreviewProvider {
 
 # License
 
-Nuke is available under the MIT license. See the LICENSE file for more info.
+FetchImage is available under the MIT license. See the LICENSE file for more info.
 
