@@ -21,8 +21,8 @@ public final class FetchImage: ObservableObject, Identifiable {
     /// might be updated multiple times during the download.
     @Published public private(set) var image: PlatformImage?
 
-    /// Returns an error if the previous attempt to fetch the most recent attempt
-    /// to load the image failed with an error.
+    /// Returns an error if the previous attempt to fetch the image failed with an error.
+    /// Error is cleared out when the download is restarted.
     @Published public private(set) var error: Error?
 
     /// Returns `true` if the image is being loaded.
