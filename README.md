@@ -109,7 +109,7 @@ public struct ImageView: View {
 struct ImageView_Previews: PreviewProvider {
     static var previews: some View {
         let url = URL(string: "https://cloud.githubusercontent.com/assets/1567433/9781817/ecb16e82-57a0-11e5-9b43-6b4f52659997.jpg")!
-        ImageView(image: FetchImage(url: url))
+        return ImageView(image: FetchImage(url: url))
             .frame(width: 80, height: 80)
             .clipped()
     }
